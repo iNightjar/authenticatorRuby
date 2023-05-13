@@ -1,2 +1,3 @@
-# authenticatorRuby
-authenticator | username, password | commandline utility
+## Console Authenticator 🔏
+
+Checks Username, Passwords | CommanLine Utility
