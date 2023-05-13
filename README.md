@@ -1,3 +1,3 @@
 ## Console Authenticator 🔏
 
-Checks Username, Passwords | CommanLine Utility
+Checks Username, Passwords | Command-Line Utility
