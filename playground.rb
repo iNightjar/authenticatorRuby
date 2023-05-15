@@ -14,6 +14,7 @@ puts "if password is correct, you will get back the user object"
 # hash, array, branching, while loops and designing program execution flow
 attemps = 1
 while attemps < 4
-    puts "this will keep printing!"
+    puts "Press n to quit or any other key to continue: "
+    input  = gets.chomp.downcase
     attemps += 1
 end
