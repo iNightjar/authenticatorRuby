@@ -1,7 +1,7 @@
 users = [
           { username: "mashrur", password: "password1" },
           { username: "jack", password: "password2" },
-          { username: "arya", password: "password3" },
+          { username: "inightjar", password: "anton" },
           { username: "jonshow", password: "password4" },
           { username: "heisenberg", password: "password5" }
         ]
@@ -10,10 +10,9 @@ def auth_user(username, password, users)
   users.each do |user|
     if user[:username] == username && user[:password] == password
       return user
-    else
-      puts "Credintials were not correct!"
     end
   end
+  "Credintials were not correct!"
 end
 
 
@@ -22,7 +21,7 @@ puts 'Welcome to Authenticator Program!'
 puts
 
 attemps = 1
-while attemps <= 4
+while attemps < 4
   print "Username: "
   username = gets.chomp
   print "password: "
@@ -34,3 +33,4 @@ while attemps <= 4
   break if input == "n"
   attemps += 1
 end
+puts "You have exceeded the number of attempts" if attemps == 4
