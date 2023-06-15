@@ -33,4 +33,4 @@ while attemps < 4
   break if input == "n"
   attemps += 1
 end
-puts "You have exceeded the number of attempts" if attemps == 4
+puts "You have exceeded the number of attempts, Please try again." if attemps == 4
