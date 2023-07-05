@@ -33,11 +33,11 @@ is_authenticateed = instance.authenticate_user(instance.username, instance.passw
 
 ### The CheckCredentails Modules
 
-    • verify_hash_digest(username, password, list_of_users): Registers a new user with the given username and password. The password is securely hashed using bcrypt before being stored in the database.
+• verify_hash_digest(username, password, list_of_users): Registers a new user with the given username and password. The password is securely hashed using bcrypt before being stored in the database.
 
-    • create_secure_users(list_of_users) takes a list of user records (which is typically an array of hashes) and securely encrypts their passwords using a hash function. This method is useful for creating a secure database of user records, where the passwords are encrypted and cannot be easily accessed or decrypted by an attacker.
+• create_secure_users(list_of_users) takes a list of user records (which is typically an array of hashes) and securely encrypts their passwords using a hash function. This method is useful for creating a secure database of user records, where the passwords are encrypted and cannot be easily accessed or decrypted by an attacker.
 
-    • authenticate_user (username, password, list_of_users): Authenticates a user with the given username and password. The password is verified against the hashed password stored in the database using bcrypt. Returns true if the authentication is successful, and false otherwise.
+• authenticate_user (username, password, list_of_users): Authenticates a user with the given username and password. The password is verified against the hashed password stored in the database using bcrypt. Returns true if the authentication is successful, and false otherwise.
 
 
 ## 🔒 Security
